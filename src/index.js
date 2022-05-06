@@ -4,6 +4,10 @@ const path = require('path');
 const morgan = require ('morgan');
 const mysql = require('mysql');
 const myConnection = require('express-myConnection');
+const clienteController = require('../src/controllers/clienteController');
+const router = require('./routes/index');
+
+
 
 // settings
 app.set('port', 3000);

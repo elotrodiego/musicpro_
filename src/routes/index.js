@@ -5,6 +5,8 @@ router.get('/', (req, res) => {
     res.render('index.html', {tittle: 'asd'} );
 });
 
+router.get('/', clienteController.list);
+
 router.get('/contact', (req, res) => {
     res.render('contact.html', {tittle: 'contact'} );
 });
