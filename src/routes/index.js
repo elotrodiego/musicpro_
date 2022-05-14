@@ -6,7 +6,7 @@ const clienteController = require('../controllers/clienteController');
 const test = require('../model/daoCliente');
 
 router.get('/', test.list);
-
+//router.get('/', clienteController.todasCliente);
 
 
 //router.get('/', clienteController.todasCliente);

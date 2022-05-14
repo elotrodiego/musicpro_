@@ -2,7 +2,7 @@ CREATE DATABASE musicpro;
 
 USE musicpro;
 
-CREATE TABLE cliente(
+CREATE TABLE usuario(
     id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(128) NOT NULL,
     apellido VARCHAR(128) NOT NULL,
@@ -14,4 +14,4 @@ CREATE TABLE cliente(
 
 SHOW TABLES;
 
-describe cliente;
+describe usuario;
