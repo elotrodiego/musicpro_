@@ -1,9 +1,13 @@
 const controller = {};
 
-/*const daoLeerCliente = () => {
+const daoLeerCliente = () => {
+    console.log('daoleer');
     return new Promise((resolve, reject) => {
+        console.log('promise');
         controller.list = (req, res) => {
+            console.log('cont list');
             req.getConnection((err, conn) => {
+                console.log('getconn');
                 conn.query('SELECT * FROM cliente', (err, cliente) => {
                     if (err) {
                         res.json(err);
@@ -15,9 +19,9 @@ const controller = {};
             });
         }
     });
-};*/
+};
 
-controller.list = (req, res) => {
+/*controller.list = (req, res) => {
     req.getConnection((err, conn) => {
         conn.query('SELECT * FROM cliente', (err, cliente) => {
             if (err) {
@@ -28,6 +32,11 @@ controller.list = (req, res) => {
             });
         });
     });
-}
+}*/
 
-module.exports = controller;
+module.exports = controller
+{
+    daoLeerCliente
+};
+
+//module.exports = controller;
